@@ -1,7 +1,6 @@
-import { defineNuxtConfig } from 'nuxt3'
+import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
-  ssr: false,
   meta: {
     title: 'Gusbell | Nuxt 3 template',
     htmlAttrs: {
@@ -18,8 +17,6 @@ export default defineNuxtConfig({
   css: ['~/assets/css/global.css'],
 
   plugins: [],
-
-  serverMiddleware: [{ path: '/api', handler: '~/server/api' }],
 
   modules: [],
 

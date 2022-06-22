@@ -10,4 +10,8 @@ export default defineConfig({
   },
   theme: {},
   plugins: [],
+  css: [
+    'virtual:windi.css',
+    'virtual:windi-devtools',
+  ],
 })

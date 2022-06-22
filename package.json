@@ -7,28 +7,32 @@
   "author": "Gusbell (https://www.gusbell.tech)",
   "repository": "https://github.com/Gusb3ll/nuxt3-template",
   "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "nuxt preview",
+    "generate": "nuxt generate",
+    "typecheck": "nuxt typecheck",
     "start": "node .output/server/index.mjs",
-    "lint": "eslint ."
+    "lint": "eslint . --fix",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.20.2",
-    "@iconify/vue": "^3.2.1",
-    "@pinia/nuxt": "^0.1.8",
-    "@vueuse/nuxt": "^8.2.4",
-    "animejs": "^3.2.1",
-    "axios": "^0.26.1",
-    "compression": "^1.7.4",
-    "cookie-parser": "^1.4.6",
-    "eslint": "^8.12.0",
-    "express": "^4.17.3",
-    "nuxt-windicss": "^2.2.8",
-    "nuxt3": "latest",
-    "pinia": "^2.0.13",
-    "typescript": "^4.6.3",
-    "vite": "^2.9.1",
-    "vue": "^3.2.31",
-    "windicss-analysis": "^0.3.5"
-  }
+    "@antfu/eslint-config": "0.25.1",
+    "@commitlint/cli": "17.0.2",
+    "@commitlint/config-conventional": "17.0.2",
+    "@iconify/vue": "3.2.1",
+    "@lhci/cli": "0.9.0",
+    "@nuxt/vite-builder": "^3.0.0-rc.4",
+    "@pinia/nuxt": "^0.1.9",
+    "@vueuse/nuxt": "8.7.5",
+    "eslint": "8.18.0",
+    "husky": "8.0.1",
+    "nuxt": "3.0.0-rc.4",
+    "nuxt-windicss": "2.4.2",
+    "pinia": "^2.0.14",
+    "typescript": "4.7.4",
+    "vite": "2.9.12",
+    "vue": "3.2.37"
+  },
+  "packageManager": "yarn@4.0.0-rc.9"
 }
