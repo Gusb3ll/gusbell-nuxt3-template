@@ -9,58 +9,52 @@ on:
       - main
 
 jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-
-    if: github.actor != 'dependabot[bot]'
-    steps:
-      - name: Checkout 🛎
-        uses: actions/checkout@master
-        with:
-          fetch-depth: 0
-
-      - name: Setup pnpm 🚀
-        uses: pnpm/action-setup@v2.2.1
-        with:
-          version: 6.20.3
-
-      - name: Setup node 🏗
-        uses: actions/setup-node@v3.1.0
-        with:
-          node-version: 16
-          check-latest: true
-          cache: pnpm
-
-      - name: Install dependencies 👨🏻‍💻
-        run: pnpm install --frozen-lockfile
-
-      - name: Build ⚒️
-        run: pnpm build
-
   lint:
     name: Lint
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
 
-    if: github.actor != 'dependabot[bot]'
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [16]
+
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@master
 
-      - name: Setup pnpm 🚀
-        uses: pnpm/action-setup@v2.2.1
-        with:
-          version: 6.20.3
-
       - name: Setup node 🏗
-        uses: actions/setup-node@v3.1.0
+        uses: actions/setup-node@v3.3.0
         with:
-          node-version: 16
-          check-latest: true
-          cache: pnpm
+          node-version: ${{ matrix.node }}
+          cache: yarn
 
       - name: Install dependencies 👨🏻‍💻
-        run: pnpm install --frozen-lockfile
+        run: yarn --immutable
 
       - name: Run linter 👀
-        run: pnpm lint
+        run: yarn lint
+
+  build:
+    name: Build
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [16]
+
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@master
+
+      - name: Setup node 🏗
+        uses: actions/setup-node@v3.3.0
+        with:
+          node-version: ${{ matrix.node }}
+          cache: yarn
+
+      - name: Install dependencies 👨🏻‍💻
+        run: yarn --immutable
+
+      - name: Build ⚒️
+        run: yarn build
