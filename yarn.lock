@@ -1044,14 +1044,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pinia/nuxt@npm:^0.1.9":
-  version: 0.1.9
-  resolution: "@pinia/nuxt@npm:0.1.9"
+"@pinia/nuxt@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@pinia/nuxt@npm:0.2.0"
   dependencies:
     vue-demi: "npm:*"
   peerDependencies:
-    pinia: ">=2.0.14"
-  checksum: a81da9856e00699b447a74c19443d22fa01bddbd50aca8094f614ce7e6c4cbbc67a0e159c809d21f0529d370ce992b950f54dc4a07ca549a333a80eb7d869e87
+    pinia: ">=2.0.15"
+  checksum: 9c6e496da29a100f2643d5b863ebcc22a77a0628903b8bb828c9634466559b91488aabbeac5af694542e585aa181d181ef0ecf2a367c37e6316bad7b9aa098ce
   languageName: node
   linkType: hard
 
@@ -7710,7 +7710,7 @@ __metadata:
     "@iconify/vue": "npm:3.2.1"
     "@lhci/cli": "npm:0.9.0"
     "@nuxt/vite-builder": "npm:^3.0.0-rc.4"
-    "@pinia/nuxt": "npm:^0.1.9"
+    "@pinia/nuxt": "npm:^0.2.0"
     "@vueuse/nuxt": "npm:8.9.1"
     eslint: "npm:8.19.0"
     husky: "npm:8.0.1"
