@@ -1044,14 +1044,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pinia/nuxt@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "@pinia/nuxt@npm:0.2.0"
+"@pinia/nuxt@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "@pinia/nuxt@npm:0.3.0"
   dependencies:
-    vue-demi: "npm:*"
-  peerDependencies:
-    pinia: ">=2.0.15"
-  checksum: 9c6e496da29a100f2643d5b863ebcc22a77a0628903b8bb828c9634466559b91488aabbeac5af694542e585aa181d181ef0ecf2a367c37e6316bad7b9aa098ce
+    "@nuxt/kit": "npm:^3.0.0-rc.4"
+    pinia: "npm:>=2.0.14"
+  checksum: 5de730108178fe10bab182d9471f7c142605ff546e3162950a5896bba9b15b222777a6106bd683c1d467e89d8d156eb40aae0cfcace3e38599c764797713a6e1
   languageName: node
   linkType: hard
 
@@ -7710,7 +7709,7 @@ __metadata:
     "@iconify/vue": "npm:3.2.1"
     "@lhci/cli": "npm:0.9.0"
     "@nuxt/vite-builder": "npm:^3.0.0-rc.4"
-    "@pinia/nuxt": "npm:^0.2.0"
+    "@pinia/nuxt": "npm:^0.3.0"
     "@vueuse/nuxt": "npm:8.9.2"
     eslint: "npm:8.19.0"
     husky: "npm:8.0.1"
@@ -8316,6 +8315,25 @@ __metadata:
   version: 3.0.0
   resolution: "pify@npm:3.0.0"
   checksum: ed76e8cbc9a929d14a4e5c84c444811af336daf2f8b8298722e331b7f1d0671da71f7df63fcd78ce304f330b7b90750af9064aa02a1e38ff3e7f4c0885a02360
+  languageName: node
+  linkType: hard
+
+"pinia@npm:>=2.0.14":
+  version: 2.0.16
+  resolution: "pinia@npm:2.0.16"
+  dependencies:
+    "@vue/devtools-api": "npm:^6.1.4"
+    vue-demi: "npm:*"
+  peerDependencies:
+    "@vue/composition-api": ^1.4.0
+    typescript: ">=4.4.4"
+    vue: ^2.6.14 || ^3.2.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+    typescript:
+      optional: true
+  checksum: e26efcaa179c1d5d7efedf5a8f8853d0a24dcb8df0774a7ff278dfdb24650786ec9decbdddfaaac137ccb53aecf47eb2f508ea9162fd79bbc1ab9bb4699f53fd
   languageName: node
   linkType: hard
 
