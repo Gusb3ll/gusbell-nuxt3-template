@@ -23,7 +23,7 @@
     "@iconify/vue": "3.2.1",
     "@lhci/cli": "0.9.0",
     "@nuxt/vite-builder": "^3.0.0-rc.4",
-    "@pinia/nuxt": "^0.3.0",
+    "@pinia/nuxt": "^0.4.0",
     "@vueuse/nuxt": "9.1.0",
     "eslint": "8.21.0",
     "husky": "8.0.1",

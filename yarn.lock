@@ -1143,13 +1143,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pinia/nuxt@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "@pinia/nuxt@npm:0.3.0"
+"@pinia/nuxt@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "@pinia/nuxt@npm:0.4.0"
   dependencies:
-    "@nuxt/kit": "npm:^3.0.0-rc.4"
-    pinia: "npm:>=2.0.14"
-  checksum: 5de730108178fe10bab182d9471f7c142605ff546e3162950a5896bba9b15b222777a6106bd683c1d467e89d8d156eb40aae0cfcace3e38599c764797713a6e1
+    "@nuxt/kit": "npm:3.0.0-rc.6"
+    pinia: "npm:>=2.0.18"
+  checksum: d15ffd20d6cd16b56820fa9e5796d760fa07fb3ac95a982f2b95cb827f117c73c8bdf3d65f703249e2a3bd72c67e268203d5bdcbf0a4b73437a893c173b226c4
   languageName: node
   linkType: hard
 
@@ -1700,6 +1700,13 @@ __metadata:
   version: 6.1.4
   resolution: "@vue/devtools-api@npm:6.1.4"
   checksum: a3b6aa68608ceb443642439e438e6480b97422e4a1eb5fe4f5879483fcc7908e45a9e59f01741e3abb1242a03fb93b83b48e37549c9644a43f666f06d299f1ca
+  languageName: node
+  linkType: hard
+
+"@vue/devtools-api@npm:^6.2.1":
+  version: 6.2.1
+  resolution: "@vue/devtools-api@npm:6.2.1"
+  checksum: 0fc5eefc5d1db6c45f5f73d39a2748160a51d2989b91655184b8d484c3695af3cc0a8ebd85e60508d2ae1fe115d50ad8c5bd3a988559e0768f4ffbbdf5e213c0
   languageName: node
   linkType: hard
 
@@ -7901,7 +7908,7 @@ __metadata:
     "@iconify/vue": "npm:3.2.1"
     "@lhci/cli": "npm:0.9.0"
     "@nuxt/vite-builder": "npm:^3.0.0-rc.4"
-    "@pinia/nuxt": "npm:^0.3.0"
+    "@pinia/nuxt": "npm:^0.4.0"
     "@vueuse/nuxt": "npm:9.1.0"
     eslint: "npm:8.21.0"
     husky: "npm:8.0.1"
@@ -8501,11 +8508,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pinia@npm:>=2.0.14":
-  version: 2.0.16
-  resolution: "pinia@npm:2.0.16"
+"pinia@npm:>=2.0.18":
+  version: 2.0.18
+  resolution: "pinia@npm:2.0.18"
   dependencies:
-    "@vue/devtools-api": "npm:^6.1.4"
+    "@vue/devtools-api": "npm:^6.2.1"
     vue-demi: "npm:*"
   peerDependencies:
     "@vue/composition-api": ^1.4.0
@@ -8516,7 +8523,7 @@ __metadata:
       optional: true
     typescript:
       optional: true
-  checksum: e26efcaa179c1d5d7efedf5a8f8853d0a24dcb8df0774a7ff278dfdb24650786ec9decbdddfaaac137ccb53aecf47eb2f508ea9162fd79bbc1ab9bb4699f53fd
+  checksum: a16db913650d8cd0cfb75ec3b59f06e2a56fb7d236c080fe91a6c37ad38f6940b270db2e23a4bb030630738939f5e3ebe1f9882b70aef5794b3debb18e2f4f09
   languageName: node
   linkType: hard
 
