@@ -7916,7 +7916,7 @@ __metadata:
     nuxt-windicss: "npm:2.5.0"
     pinia: "npm:^2.0.14"
     typescript: "npm:4.7.4"
-    vite: "npm:2.9.14"
+    vite: "npm:2.9.15"
     vue: "npm:3.2.37"
   languageName: unknown
   linkType: soft
@@ -9551,6 +9551,20 @@ __metadata:
   dependencies:
     estree-walker: "npm:^0.6.1"
   checksum: 9b64e4aa2dc18adacbd97ec6e210b0ea37484331c7f65a87eb5d523dee88170d52c4b758c81722558d266f255708615ea75b6a625f0979b8cf5b13089db1449c
+  languageName: node
+  linkType: hard
+
+"rollup@npm:>=2.59.0 <2.78.0":
+  version: 2.77.3
+  resolution: "rollup@npm:2.77.3"
+  dependencies:
+    fsevents: "npm:~2.3.2"
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    rollup: dist/bin/rollup
+  checksum: 7f869c91638cd3e2d36c4d1ec337900e4fd14285d4fd1e6ebfc2c532abc17b69bffdb8e48682b5237a3ec303fcb2e3b878864f8d5c5e51e05b28dd3d980a5cd7
   languageName: node
   linkType: hard
 
@@ -11204,15 +11218,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:2.9.14, vite@npm:^2.9.14":
-  version: 2.9.14
-  resolution: "vite@npm:2.9.14"
+"vite@npm:2.9.15":
+  version: 2.9.15
+  resolution: "vite@npm:2.9.15"
   dependencies:
     esbuild: "npm:^0.14.27"
     fsevents: "npm:~2.3.2"
     postcss: "npm:^8.4.13"
     resolve: "npm:^1.22.0"
-    rollup: "npm:^2.59.0"
+    rollup: "npm:>=2.59.0 <2.78.0"
   peerDependencies:
     less: "*"
     sass: "*"
@@ -11229,7 +11243,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 7e333851681ac58e9b510b6eed95ba293e7e08b28e95aa7c2a4d5c8e65e01f9dfc4c39c24496dcd39a949cc82a13cfe13b9065ce84418090e20dbdce08c5a741
+  checksum: eb9daa8b0b34a2ab512ee5480be547e08582b3b1275829886ad94dc921cccd2798619779d14f4e320124803c17c98b4e95ae7e80d6d86330ed0a13db941142d0
   languageName: node
   linkType: hard
 
@@ -11291,6 +11305,35 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: eea19ba4a17879dc122ff324867f85197824d55e0c14068a7ea9b2ba621ed17c4e3368fea5bb20dbb42e9dc242a29ae3cc9829e1aceadd1682decc33a024e73c
+  languageName: node
+  linkType: hard
+
+"vite@npm:^2.9.14":
+  version: 2.9.14
+  resolution: "vite@npm:2.9.14"
+  dependencies:
+    esbuild: "npm:^0.14.27"
+    fsevents: "npm:~2.3.2"
+    postcss: "npm:^8.4.13"
+    resolve: "npm:^1.22.0"
+    rollup: "npm:^2.59.0"
+  peerDependencies:
+    less: "*"
+    sass: "*"
+    stylus: "*"
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  peerDependenciesMeta:
+    less:
+      optional: true
+    sass:
+      optional: true
+    stylus:
+      optional: true
+  bin:
+    vite: bin/vite.js
+  checksum: 7e333851681ac58e9b510b6eed95ba293e7e08b28e95aa7c2a4d5c8e65e01f9dfc4c39c24496dcd39a949cc82a13cfe13b9065ce84418090e20dbdce08c5a741
   languageName: node
   linkType: hard
 
