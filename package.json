@@ -25,7 +25,7 @@
     "@nuxt/vite-builder": "^3.0.0-rc.4",
     "@pinia/nuxt": "^0.4.0",
     "@vueuse/nuxt": "9.1.1",
-    "eslint": "8.22.0",
+    "eslint": "8.23.0",
     "husky": "8.0.1",
     "nuxt": "3.0.0-rc.6",
     "nuxt-windicss": "2.5.0",
