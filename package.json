@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.26.2",
-    "@commitlint/cli": "17.1.1",
+    "@commitlint/cli": "17.1.2",
     "@commitlint/config-conventional": "17.1.0",
     "@iconify/vue": "3.2.1",
     "@lhci/cli": "0.9.0",
